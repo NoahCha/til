@@ -1,0 +1,18 @@
+$(document).ready(function () { 
+    var p = ("<div class ='nextone'></div>");
+        var count = 0; //count begins at 0
+    $('.first').click(function () {
+        $('.nextone').append('<p>How long can you make this page???</p>');//Everytime you click the div 'first', this <p> will be appended to the div 'nextone'
+    });
+    
+    $('.first').click(function () {
+        count++;
+        $('.count').text('NUMBER OF CLICKS:' + ' ' + count); //Every time you click the div 'first', the program will also display the number of clicks
+    });
+    $('.reset').click(function () {
+        $('p').remove();
+        count = 0;
+    });
+   
+    
+});
